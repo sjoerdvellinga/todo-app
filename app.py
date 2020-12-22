@@ -30,6 +30,7 @@ def create_todo():
     print(sys.exc_info())
   finally:
     db.session.close()
+# comment out the next if/else statement as this stops the app to run and blocks adding to-do items. TODO @https://github.com/sjoerdvellinga
 #  if error:
 #    abort (400)
 #  else:
